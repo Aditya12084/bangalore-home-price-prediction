@@ -4,15 +4,10 @@
 
 Bangalore House Price Prediction ML project. Features: data cleaning, feature engineering, outlier removal (business logic + statistical), visualizations, multiple models (Linear, Lasso, Decision Tree, Random Forest, Gradient Boosting) tuned via GridSearch + ShuffleSplit CV, and a live prediction web app using HTML, CSS & JS.
 
-![Python](https://img.shields.io/badge/Python-3.9+-blue)  
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.2+-orange)  
-![Pandas](https://img.shields.io/badge/Pandas-1.5+-green)  
-![Deployment](https://img.shields.io/badge/Deployed-Render-green)  
-![License](https://img.shields.io/badge/License-MIT-yellow)
+![Python](https://img.shields.io/badge/Python-3.9+-blue) ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.2+-orange) ![Pandas](https://img.shields.io/badge/Pandas-1.5+-green) ![Deployment](https://img.shields.io/badge/Deployed-Render-green) ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ## 🚀 Live Demo
-[Try the Web App Here](https://your-app-name.onrender.com)  
-*(Replace with your actual Render URL – e.g., https://bangalore-home-price-prediction-ae1a.onrender.com/)*  
+*(Render URL – https://bangalore-home-price-prediction-ae1a.onrender.com/)*  
 ![App Screenshot](assets/img_app.png)
 
 ## 📊 Dataset
@@ -27,7 +22,7 @@ Bangalore House Price Prediction ML project. Features: data cleaning, feature en
 - Converted various area units (sqft, sq. meter, acres, cents, gaj, etc.) to standardized square feet
 - Applied domain-based filtering: removed properties with total_sqft < 300 sqft
 
-### 2 **Feature Engineering**
+### 2. **Feature Engineering**
 - Extracted and cleaned the BHK (Bedroom-Hall-Kitchen) feature from the raw "size" column (e.g., "2 BHK", "4 Bedroom" → integer BHK count)
 - Created `price_per_sqft` for better modeling and outlier detection.
 
@@ -64,7 +59,7 @@ Bangalore House Price Prediction ML project. Features: data cleaning, feature en
 - **Best Model**: Linear Regression (0.86 R²)  
 - Saved with Pickle: `banglore_home_prices_model.pickle` for easy loading.
 
-### 7. **Web App Deployment**
+### 6. **Web App Deployment**
 - **Frontend**: Pure HTML5, CSS3, Vanilla JavaScript
 - **Backend**: Flask API to load model and serve predictions.
 - **Deployment**: Render.com
