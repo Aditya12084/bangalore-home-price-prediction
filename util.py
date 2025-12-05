@@ -7,7 +7,6 @@ __data_columns=None
 __model=None
 
 def get_estimated_price(location,sqft,bhk,bath):
-
     try:
         loc_index = __data_columns.index(location.lower())
     except:
@@ -32,16 +31,15 @@ def load_saved_artifacts():
     global __locations
     global __model
 
-    with open('../model/columns.json', 'r') as f:
+    with open('model/columns.json', 'r') as f:
         __data_columns=json.load(f)['data_columns']
         __locations=__data_columns[3:]
 
-    with open("../model/banglore_home_prices_model.pickle", 'rb') as f:
+    with open("model/banglore_home_prices_model.pickle", 'rb') as f:
         __model=pickle.load(f)
 
     print('loading artifacts is done')
 
 
 if __name__=="__main__":
-    load_saved_artifacts()
     print('Starting Py Server....')

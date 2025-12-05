@@ -7,6 +7,7 @@ app = Flask(__name__, static_folder="client", static_url_path="/")
 
 CORS(app)
 
+util.load_saved_artifacts()
 
 @app.route('/')
 def index():
@@ -39,5 +40,4 @@ def predict_home_price():
     return response
 
 if __name__=="__main__":
-    util.load_saved_artifacts()
     app.run()
