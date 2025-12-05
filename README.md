@@ -17,10 +17,9 @@ Bangalore House Price Prediction ML project. Features: data cleaning, feature en
 ## 🔍 What I Did:
 
 ### 1. **Data Cleaning & Preprocessing**
-- Handled missing values (e.g., mode for categorical, median for numerical).
+- Handled missing values.
 - Fixed inconsistent data (e.g., sqft range parsing like "1133 - 1384").
 - Converted various area units (sqft, sq. meter, acres, cents, gaj, etc.) to standardized square feet
-- Applied domain-based filtering: removed properties with total_sqft < 300 sqft
 
 ### 2. **Feature Engineering**
 - Extracted and cleaned the BHK (Bedroom-Hall-Kitchen) feature from the raw "size" column (e.g., "2 BHK", "4 Bedroom" → integer BHK count)
