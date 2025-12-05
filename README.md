@@ -33,9 +33,9 @@ Bangalore House Price Prediction ML project. Features: data cleaning, feature en
 
 **Hebbal Location – Price per sqft distribution (Before vs After outlier removal)**
 
-| Before Outlier Removal                           | After Outlier Removal                            |
-|--------------------------------------------------|--------------------------------------------------|
-| ![Before](assets/outliers1_before.png)           | ![After](assets/outliers1_after.png)            |
+| Before Outlier Removal                         | After Outlier Removal                   |
+|------------------------------------------------|-----------------------------------------|
+| ![Before](assets/outliers1_before_updated.jpg) | ![After](assets/outliers1_after.png) |
 
 
 ### 4. **Dimensionality Reduction**
