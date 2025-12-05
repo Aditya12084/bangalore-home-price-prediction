@@ -1,3 +1,5 @@
+const base_url='https://bangalore-home-price-prediction-ae1a.onrender.com';
+
 function getBathValue() {
   var uiBathrooms = document.getElementsByName("uiBathrooms");
   for(var i in uiBathrooms) {
@@ -5,7 +7,7 @@ function getBathValue() {
         return parseInt(i)+1;
     }
   }
-  return -1; // Invalid Value
+  return -1;
 }
 
 function getBHKValue() {
@@ -15,7 +17,7 @@ function getBHKValue() {
         return parseInt(i)+1;
     }
   }
-  return -1; // Invalid Value
+  return -1;
 }
 
 function onClickedEstimatePrice() {
@@ -27,7 +29,7 @@ function onClickedEstimatePrice() {
   var estPrice = document.getElementById("uiEstimatedPrice");
 
 
-  var url = "http://127.0.0.1:5000/predict_home_price";
+  var url = base_url+"/predict_home_price";
 
   $.post(url, {
       total_sqft: parseFloat(sqft.value),
@@ -43,7 +45,7 @@ function onClickedEstimatePrice() {
 
 function onPageLoad() {
   console.log( "document loaded" );
-   var url = "http://127.0.0.1:5000/get_location_names";
+   var url = base_url + "/get_location_names";
   $.get(url,function(data, status) {
       console.log("got response for get_location_names request");
       if(data) {
